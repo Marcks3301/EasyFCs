@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;  
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+body {
+width: 100%;
+min-height: 100vh;
+background-color: black;
+color: white;
+
+}
+  
+a{
+    color: white;
+    
+}
+
+div#background {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    opacity: 0.3;
+    z-index: -1;
+}
+div#background >img{
+    width: 125vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+header{
+    padding: 20px;
+}
+
+header > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header > div > div > a{
+    padding: 10px 15px;  
+    background-image: linear-gradient(to right, #26B0F4, #AD21DD);
+    border-radius: 20px;
+}
+header > div > div#botoes > a{
+    background-image: none;
+    transition: background 2s ease-in-out;
+    
+}
+
+header > div > div#botoes > a:hover{
+    background-image: linear-gradient(to right, #26B0F4, #AD21DD);
+}
+
+div#caixalogin{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+div#caixalogin > a{
+    border: 2px solid none;
+    border-radius: 4px;
+    padding: 4px;
+    text-align: center;
+}
+
+div#caixalogin > a#btncadastro{
+    border: 2px solid white;
+    background-image: none;
+    padding: 1px 15px;
+}
+
+hr {
+    border: 0;
+    height: 4px;
+    background: linear-gradient(to right, #26B0F4, #AD21DD);
+    margin: 20px auto;
+    width: 95%;
+  }
+
+.bolinha{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+#loginho, #participe{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+
+}
+a#participe{
+    border: 2px solid none;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    width: 120px;
+    padding: 10px 80px;
+    text-align: center;
+    background-image: linear-gradient(to right, #26B0F4, #AD21DD);
+    font-size: 2.0em;
+    font-weight: 500;
+    margin-left: 100px;
+
+}
+
+main{
+    width: 92%;
+    margin: auto;
+   display: flex;
+   flex-direction: column;
+   gap: 70px;
+
+}
+
+
+
+main > div > h1{
+    font-size: 4em;
+    font-weight: 700;
+    text-align: start;
+}
+
+main > div > p{
+    font-size: 1.5em;
+}
